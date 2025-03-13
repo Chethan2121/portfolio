@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chethan A R | Portfolio</title>
+    <meta name="description" content="Portfolio of Chethan A R, Information Science Engineering student specializing in Web Development, AI/ML, and Cybersecurity">
+    <meta name="keywords" content="Chethan A R, portfolio, web development, AI, ML, cybersecurity, information science">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Chethan A R | Portfolio">
+    <meta property="og:description" content="Information Science Engineering student specializing in Web Development, AI/ML, and Cybersecurity">
+    <meta property="og:image" content="assets/profile.jpg">
+    <meta property="og:url" content="https://chethanar.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Immediate animation script -->
+    <script>
+        // Show all elements immediately when they're in the viewport
+        document.addEventListener('DOMContentLoaded', function() {
+            // Apply animations to elements already in viewport
+            const animateElements = document.querySelectorAll('.project-card, .timeline-item, .achievement-item, .certification-item, .experience-item, .skill-item, .section-header');
+            
+            animateElements.forEach(function(element) {
+                // Check if element is in viewport
+                const rect = element.getBoundingClientRect();
+                const isInViewport = (
+                    rect.top <= window.innerHeight &&
+                    rect.bottom >= 0
+                );
+                
+                if (isInViewport) {
+                    // Add animation class immediately
+                    element.classList.add('animate');
+                }
+            });
+        });
+    </script>
+</head>
+<body class="dark-mode">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!-- Failsafe for preloader -->
+    <script>
+        // Ensure preloader is removed after 5 seconds no matter what
+        window.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                var preloader = document.querySelector('.preloader');
+                if (preloader) {
+                    preloader.classList.add('fade-out');
+                    document.body.style.overflow = 'auto';
+                }
+            }, 5000);
+        });
+    </script>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Chethan<span>AR</span></a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active" aria-current="page">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span>Chethan A R</span></h1>
+                    <h2>A passionate Information Science Engineer specializing in</h2>
+                    <div class="typing-text">Web Development, AI/ML, and Cybersecurity</div>
+                    <div class="hero-btns">
+                        <a href="Chethan_Resume_1.0.pdf" class="btn primary-btn" download>Download Resume</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/profile.jpg" alt="Chethan A R" onerror="this.src='https://via.placeholder.com/300x300?text=Chethan+A+R'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a 6th-semester Information Science student eager to apply my skills in real-world projects and collaborate on innovative ideas.</p>
+                    
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>B.E in Information Science</h4>
+                                <p>Vidyavardhaka College of Engineering, Mysore</p>
+                                <p class="timeline-date">2022 - Present</p>
+                                <p class="highlight">CGPA: 8.36</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>12th Grade</h4>
+                                <p>KPS Composite PU College, Arsikere</p>
+                                <p class="timeline-date">2020 - 2022</p>
+                                <p class="highlight">Percentage: 94.12%</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>10th Grade</h4>
+                                <p>St Mary's High School, Arsikere</p>
+                                <p class="timeline-date">2017 - 2020</p>
+                                <p class="highlight">Percentage: 73.74%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills">
+                <h3>Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4>Programming</h4>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-name">Python</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">C++</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">C</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">HTML/CSS</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Tech Stack</h4>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-name">Data Structures & Algorithms</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Git & GitHub</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Tools</h4>
+                        <div class="skill-items">
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Figma</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Canva</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="filter-buttons" role="tablist" aria-label="Project filters">
+                <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+                <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+                <button class="filter-btn" data-filter="ml" role="tab" aria-selected="false">ML/AI</button>
+                <button class="filter-btn" data-filter="other" role="tab" aria-selected="false">Other</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="ml">
+                    <div class="project-img">
+                        <img src="assets/projects/oly.jpg" alt="Olympic Insights" onerror="this.src='https://via.placeholder.com/400x300?text=Olympic+Insights'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Olympic Insights & Fan Engagement Platform</h3>
+                        <p>A comprehensive platform for Olympic data analysis and fan engagement using machine learning algorithms.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>ML</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Chethan2121" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="assets/projects/pas.jpg" alt="Password Generator" onerror="this.src='https://via.placeholder.com/400x300?text=Password+Generator'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Modern Password Generator</h3>
+                        <p>A secure and customizable password generator with options for length, complexity, and special characters.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Chethan2121" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="ml">
+                    <div class="project-img">
+                        <img src="assets/projects/sign.png" alt="Sign Language Detection" onerror="this.src='https://via.placeholder.com/400x300?text=Sign+Language+Detection'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-Time Sign Language Detection</h3>
+                        <p>An application that detects and translates sign language gestures in real-time using computer vision.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>TensorFlow</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Chethan2121" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="assets/projects/cry.jpg" alt="Crypto Key" onerror="this.src='https://via.placeholder.com/400x300?text=Crypto+Key'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Crypto Key – Web-Based Encryption Tool</h3>
+                        <p>A web application for encrypting and decrypting messages using various cryptographic algorithms.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Chethan2121" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2>Achievements & Certifications</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="achievements-content">
+                <div class="achievements-list">
+                    <h3>Achievements</h3>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h4>Finalist in Code CrunchML (DTU)</h4>
+                            <p>Reached the finals of the prestigious machine learning competition hosted by DTU.</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h4>2nd Runner-up in Build Your Application Using Python</h4>
+                            <p>Secured 3rd position in the national-level Python application development competition.</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h4>Published Research Paper</h4>
+                            <p>Published a research paper on Abstractive Text Summarization in a reputed journal.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certifications-list">
+                    <h3>Certifications</h3>
+                    <div class="certification-item">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="certification-details">
+                            <h4>Holo-World Robotics & Arduino Programming</h4>
+                            <p>Completed comprehensive training on robotics and Arduino programming.</p>
+                        </div>
+                    </div>
+                    <div class="certification-item">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="certification-details">
+                            <h4>5-Day XR & AIoT Workshop</h4>
+                            <p>Participated in an intensive workshop on Extended Reality and AI Internet of Things.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Experience & Leadership</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <div class="experience-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="experience-details">
+                        <h4>Vice-Chair at IEEE-ITS</h4>
+                        <p>Served as the Vice-Chair of the IEEE Information Technology Society chapter at my college.</p>
+                        <p class="experience-date">2023 - Present</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="experience-details">
+                        <h4>Workshop Conductor</h4>
+                        <p>Conducted workshops for juniors on AR/VR using Unity, helping them understand the fundamentals of extended reality development.</p>
+                        <p class="experience-date">2024</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="experience-details">
+                        <h4>Volunteer</h4>
+                        <p>Volunteered for National Level Hackathons including Infothon 3.0, TechSpark, and Open Day.</p>
+                        <p class="experience-date">2023 - 2025</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="experience-details">
+                        <h4>Class CR</h4>
+                        <p>Served as the Class Representative for 2 years, managing communication between students and faculty.</p>
+                        <p class="experience-date">2022 - 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:chethan21ar@gmail.com">chethan21ar@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/chethan-ar-69391525a/" target="_blank">Chethan A R</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Mysore, Karnataka, India</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124432.65660787444!2d76.5703681!3d12.311827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7010988f0001%3A0xb58f283f9a18f1f7!2sMysuru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1653047725543!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">Chethan<span>AR</span></a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/chethan-ar-69391525a/" target="_blank" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Chethan2121" target="_blank" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Chethan A R. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+    
+    <!-- Ensure preloader is removed -->
+    <script>
+        // Final failsafe to remove preloader
+        setTimeout(function() {
+            var preloader = document.querySelector('.preloader');
+            if (preloader) {
+                preloader.classList.add('fade-out');
+                document.body.style.overflow = 'auto';
+            }
+        }, 2000);
+    </script>
+</body>
+</html> 

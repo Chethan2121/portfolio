@@ -1,0 +1,8 @@
+This directory should contain the following project images:
+
+1. olympic.jpg - Image for Olympic Insights & Fan Engagement Platform
+2. password.jpg - Image for Modern Password Generator
+3. sign-language.jpg - Image for Real-Time Sign Language Detection
+4. crypto.jpg - Image for Crypto Key – Web-Based Encryption Tool
+
+Replace these with actual project screenshots or relevant images. 

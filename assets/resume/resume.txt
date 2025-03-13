@@ -1,0 +1,39 @@
+CHETHAN A R
+Information Science Engineering Student
+Vidyavardhaka College of Engineering, Mysore
+
+CONTACT
+Email: chethan21ar@gmail.com
+LinkedIn: linkedin.com/in/chethanar
+Location: Mysore, Karnataka, India
+
+EDUCATION
+B.E in Information Science – Vidyavardhaka College of Engineering, Mysore (CGPA: 8.47)
+12th Grade – KPS Composite PU College, Arsikere (94.12%)
+10th Grade – St Mary's High School, Arsikere (73.74%)
+
+SKILLS
+Programming: Python, C++, C, HTML, CSS
+Tech Stack: Data Structures & Algorithms, UI/UX Design, Generative AI, Computer Networks, Git & GitHub, Docker
+Tools: Tableau, Figma, Canva
+
+PROJECTS
+Olympic Insights & Fan Engagement Platform (Python-Flask, ML, Data Analysis)
+Modern Password Generator (HTML, CSS, JavaScript)
+Real-Time Sign Language Detection (Python, OpenCV, TensorFlow, Streamlit)
+Crypto Key – Web-Based Encryption Tool (HTML, CSS, JavaScript)
+
+ACHIEVEMENTS
+Finalist in Code CrunchML (DTU)
+2nd Runner-up in Build Your Application Using Python
+Published research paper on Abstractive Text Summarization
+
+CERTIFICATIONS
+Holo-World Robotics & Arduino Programming
+5-Day XR & AIoT Workshop
+
+EXPERIENCE & LEADERSHIP
+Vice-Chair at IEEE-ITS
+Conducted workshops for juniors on AR/VR using Unity
+Volunteered for National Level Hackathons (Infothon 3.0, TechSpark, Open Day)
+Class CR for 2 years 
